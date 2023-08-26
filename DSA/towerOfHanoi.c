@@ -1,4 +1,6 @@
-//Q2)  Tower of Hanoi program using Recursion
+/*
+Q3) Solve the tower of hanoi problem using recursion
+*/
 
 #include <stdio.h>
 

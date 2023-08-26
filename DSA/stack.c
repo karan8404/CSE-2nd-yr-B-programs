@@ -1,8 +1,10 @@
-// Q2) Stack Implementation Using Array
-
+/*
+Q2) Implementation of a Stack using an Array in C with the following features:
+    -> Push element
+    -> Pop element
+    -> Peek element
+*/
 #include <stdio.h>
-#include <stdlib.h>
-
 #define MAX 50 // Maximum number of elements that can be stored
 
 int top = -1, stack[MAX];
@@ -23,20 +25,20 @@ void main()
 
         switch (choice)
         {
-        case 1:
-            push();
-            break;
-        case 2:
-            pop();
-            break;
-        case 3:
-            display();
-            break;
-        case 4:
-            exit(0);
+            case 1:
+                push();
+                break;
+            case 2:
+                pop();
+                break;
+            case 3:
+                display();
+                break;
+            case 4:
+                exit(0);
 
-        default:
-            printf("\nWrong Choice.");
+            default:
+                printf("\nWrong Choice.");
         }
     }
 }
