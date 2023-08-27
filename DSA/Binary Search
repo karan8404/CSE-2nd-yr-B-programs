@@ -1,0 +1,39 @@
+#include <stdio.h>
+#define MAX_SIZE 10
+int main()
+{
+    int n, target, start, mid, end, arr[5];
+    printf("Enter the  size of the array: ");
+    scanf("%d", &n);
+    start = 0, end = n - 1;
+    printf("Enter the  elements of the array: ");
+    for (int i = 0; i < n; i++)
+    {
+        scanf("%d", &arr[i]);
+    )
+}
+    printf("Enter the  element you want to find: ");
+    scanf("%d", &target);
+
+    while (start <= end)
+    {
+
+        mid = start + (end - start) / 2;
+        if (arr[mid] == target)
+        {
+            printf("Number found at: %d", mid+1);
+            break;
+        }
+        else if (arr[mid] < target)
+        {
+            start = mid + 1;
+            
+        }
+        else
+        {
+            end = mid - 1;
+            
+        }
+    }
+    return 0;
+}
